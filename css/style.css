@@ -1,0 +1,128 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#fullpage{
+	display: block;
+	overflow: hidden;
+	background-color: #D8D8D8;
+}
+.intro{
+ background-color: #D8D8D8;
+  z-index: 999;
+}
+body{
+  overflow-x: hidden;
+}
+.page{
+  float: left;
+  position: relative;
+}
+
+h1, h2{
+  color: #74a375;
+  font-family: 'Kavivanar', cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 55px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+h2{
+  font-size: 30px;
+}
+
+
+/****** TIME-LINE   ******
+******* HEADER MENU ******/
+
+header{
+  position: fixed;
+  width: 5%;
+  height: 100%;
+  z-index: 700;
+}
+nav, ul{
+  height: inherit;
+}
+.fabloc{
+  display: block;
+  overflow: hidden;
+}
+.container {
+   width: 80%;
+   height: 50%;
+   position: relative;
+   overflow: hidden;
+}
+
+.container:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   width: 4px;
+   height: 100%;
+   background: #fff;
+   left: calc(50% - 2px);
+}
+
+.timeline-block {
+   clear: both;
+}
+.marker {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   border-radius: 50%;
+   background: #74a375;
+   z-index: 999;
+   left: calc(50% - 15px);
+}
+.active .svg-inline--fa path{
+  fill: #74a375;
+}
+.active, .marker:hover{
+   border: 2px solid #fff;
+   background: #fff;
+   left: calc(50% - 15px - 1px);
+}
+.marker:hover .svg-inline--fa path{
+  fill: #74a375;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+}
+
+header a{
+  display: block;
+  text-align: center;
+}
+.svg-inline--fa{
+  margin-top: 20%;
+}
+
+.contain{
+  width: 95%;
+  margin-left: 5%;
+  /* header : 5%; */
+}

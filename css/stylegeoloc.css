@@ -1,0 +1,13 @@
+.geoloc #infogeoc, .geoloc #mapgeoc{
+	float: left;
+}
+.geoloc #infogeoc{
+	width: 20%;
+	margin-left: 10%;
+}
+.geoloc #mapgeoc{
+	display: block;
+	overflow: hidden;
+	width: 70%;
+	height: inherit;
+}
